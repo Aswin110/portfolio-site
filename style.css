@@ -77,16 +77,11 @@ a:hover{
     text-decoration: underline;
 }
 
-.main{
-    /* border: 1px solid black; */
-}
-
-.footer{
-    /* position: relative; */
-    /* left:600px; */
-    /* border: 1px solid black; */
-
-}
+/* .main{
+    border: 1px solid black; 
+    grid-column: 2/3;
+    grid-row: 1/3;
+} */
 
 #about{
     font-size: 30px;
@@ -139,4 +134,30 @@ section.project {
 
 .project-name{
     padding-bottom: 1em;
+}
+
+.footer-container{
+    padding-bottom: 30px;
+}
+
+@media (max-width:700px){
+    body {
+        display: block; 
+    }
+
+    .header,
+    .nav,
+    .header-container {
+        position: static; 
+        width: 100%; 
+    }
+    
+    .main {
+        width: 100%; 
+        margin-top: 20px; 
+    }
+
+    main div.project-container {
+        grid-template-columns: 1fr; 
+    }
 }
